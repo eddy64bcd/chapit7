@@ -1,0 +1,12 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: auto;
+}
+
+.image-banner {
+    width: 1800px;
+    height: auto;
+}
