@@ -1,12 +1,23 @@
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
 }
 
 .image-banner {
-    width: 1800px;
-    height: auto;
+  max-width: 1800px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .image-banner {
+    max-width: 650px;
+    width: 100%;
+    height: 200px;
+  }
 }

@@ -1,9 +1,6 @@
-import './Header.css'
-import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.png'
-
-
-
+import './Header.css';
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 
 function Header() {
   return (
@@ -11,12 +8,16 @@ function Header() {
       <div className="header-content">
         <img src={logo} alt="Logo" className="logo" />
         <nav>
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link">À propos</Link>
+          <NavLink to="/" className="nav-link" end>
+            Accueil
+          </NavLink>
+          <NavLink to="/about" className="nav-link">
+            A propos
+          </NavLink>
         </nav>
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

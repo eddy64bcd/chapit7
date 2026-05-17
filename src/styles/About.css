@@ -1,18 +1,40 @@
 .cont-critere {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    width: 100%;
-   
-}     
-
-.cont-critere .critere {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  max-width: 1400px;
+  width: 100%;
 }
 
+.cont-critere .critere {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cont-critere .critere {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  .cont-critere {
+    margin: 0;
+  }
+}
