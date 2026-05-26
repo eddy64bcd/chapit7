@@ -13,9 +13,11 @@ function ErrorPage() {
     <div className="container-error">
       <Header />
       <div className="error-title">404</div>
+      <div className="container-error-text">
       <p className="error-text">
-        Oups! La page que vous demandez n'existe pas.
-      </p>
+        Oups! La page que <span>vous demandez n'existe pas.</span>
+        </p>
+        </div>
       <button className="btn-retour" onClick={handleClick}>
         Retourner sur la page d'accueil
       </button>

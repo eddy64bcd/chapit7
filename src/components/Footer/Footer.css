@@ -30,4 +30,9 @@
   .footer-image-mobile {
     display: block;
   }
+  .footer {
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+  }
 }

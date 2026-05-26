@@ -61,6 +61,8 @@
   background-color: #f6f6f6;
   gap: 30px;
   border-radius: 25px;
+  overflow: scroll;
+  max-height: 900px;
 }
 
 .home-contenu {

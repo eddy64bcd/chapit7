@@ -1,7 +1,6 @@
 .star-rating {
   display: flex;
   gap: 7px;
-  
 }
 
 .star-rating__star {
@@ -9,10 +8,10 @@
   height: 35px;
 }
 
-.star-rating__star--filled  {
+.star-rating__star--filled {
   fill: #ff6060;
 }
 
-.star-rating__star--empty  {
+.star-rating__star--empty {
   fill: #e0e0e0;
 }
