@@ -1,41 +1,48 @@
-import Banner from '../components/Banner';
-import Critere from '../components/Critere';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Collapse from '../components/Collapse';
 import '../styles/About.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import React from 'react';
+import Banner from '../components/Banner';
+ 
 
-function AboutPage() {
+function About() {
   return (
-    <>
-      <div className="container-about">
-        <Header />
-        <Banner />
-        <div className="cont-critere">
-          <Critere
-            name="Fiabilité"
-            content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
-            id="1"
-          />
-          <Critere
-            name="Respect"
-            content="La bienveillance fait partie des valeurs  fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme."
-            id="2"
-          />
-          <Critere
-            name="Service"
-            content="La qualité de notre service est au coeur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction que ce soit avec nos hotes ou nos locataires, soit empreinte de respect et de bienveillance."
-            id="3"
-          />
-          <Critere
-            name="Sécurité"
-            content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour nos locataires, chaque logement correspond aux critères de sécurité de ssécurité établis par nos services. En laissant une note aussi bien à l'hote qu'au locataire, cela permet de garantir un environnement sûr et agréable pour tous à nos équipes de vérifier que les standards sont  bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hotes"
-            id="4"
-          />
-        </div>
+   
+    <main className="about-page">
+      <Header />
+      <Banner />
+        <div className="collapse-container">
+        <Collapse title="Fiabilité" className="about-collapse-header">
+          <p>
+            Les annonces postées sur Kasa garantissent une fiabilité totale.
+            Les designers s'assurent de la véracité des annonces.
+          </p>
+        </Collapse>
+
+        <Collapse title="Respect" className="about-collapse-header">
+          <p>
+            La communauté Kasa s'engage à respecter les valeurs de respect
+            mutuel entre hôtes et locataires.
+          </p>
+        </Collapse>
+
+        <Collapse title="Service" className="about-collapse-header">
+          <p>
+            Notre service client est à votre écoute 7j/7.
+          </p>
+        </Collapse>
+
+        <Collapse title="Sécurité" className="about-collapse-header">
+          <p>
+            La sécurité de nos hôtes et de nos locataires est notre priorité.
+          </p>
+        </Collapse>
       </div>
       <Footer />
-    </>
+    </main>
+  
   );
 }
 
-export default AboutPage;
+export default About;
