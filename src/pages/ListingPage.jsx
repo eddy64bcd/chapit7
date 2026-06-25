@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import StarRating from '../components/StarRating/index';
 import Collapse from '../components/Collapse/index';
 import Caroussel from '../components/Caroussel/index';
@@ -10,16 +10,12 @@ import Footer from '../components/Footer/index';
 
 const ListingPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
   const listing = Listings.find((l) => l.id === id);
 
   if (!listing)
-    return (
-      <div>
-        <h2>404 – Logement introuvable</h2>
-        <button onClick={() => navigate('/')}>Retour à l'accueil</button>
-      </div>
-    );
+  
+    if (!listing) return <Navigate to="/error" replace />;
+  
 
   return (
     <>

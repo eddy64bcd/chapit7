@@ -5,7 +5,7 @@ import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import ListingPage from './pages/ListingPage';
 import ErrorPage from './pages/ErrorPage';
-import './index.css';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +14,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<HomePage />} />
         <Route path="/listing/:id" element={<ListingPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/error" element={<ErrorPage />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>
