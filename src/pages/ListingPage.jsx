@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import StarRating from '../components/StarRating/index';
 import Collapse from '../components/Collapse/index';
+import Caroussel from '../components/Caroussel/index';
 import Listings from '../data/Location';
 import '../styles/ListingPage.css';
 import Header from '../components/Header/index';
@@ -26,11 +27,7 @@ const ListingPage = () => {
         <Header />
         {/* Cover */}
         <div className="container-image">
-          <img
-            className="listing-image"
-            src={listing.cover}
-            alt={listing.title}
-          />
+         <Caroussel pictures={listing.pictures} />
         </div>
 
         {/* Info row */}
