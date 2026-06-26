@@ -8,15 +8,12 @@ import '../styles/ListingPage.css';
 import Header from '../components/Header/index';
 import Footer from '../components/Footer/index';
 
-const ListingPage = () => {
+  const ListingPage = () => {
   const { id } = useParams();
   const listing = Listings.find((l) => l.id === id);
 
-  if (!listing)
+  if (!listing) return <Navigate to="/error" replace />;
   
-    if (!listing) return <Navigate to="/error" replace />;
-  
-
   return (
     <>
       <div className="container-listing">

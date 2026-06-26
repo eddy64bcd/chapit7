@@ -13,10 +13,6 @@ const ArrowRight = () => (
   </svg>
 );
 
-/**
- * Carousel — composant Kasa
- * @param {string[]} pictures - tableau d'URLs d'images
- */
 function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
